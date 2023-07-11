@@ -21,14 +21,19 @@ jobs:
       - name: Instalar dependencias
         run: npm install
 
-      - name: Desplegar en GitHub Pages
+      - name: Construir proyecto
         run: npm run build
-        env:
-          API_KEY: ${{ secrets.API_KEY }}
-          CLIENT_ID: ${{ secrets.CLIENT_ID }}
+
+      - name: Desplegar en GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
 
       - name: Configurar Google Sheets API
         run: |
+          echo "${{ secrets.SERVICE_ACCOUNT_KEY }}" > service-account-key.json
           gcloud auth activate-service-account --key-file=service-account-key.json
           gcloud config set project datos-formulario-portfolio
           gcloud auth configure-docker
+
