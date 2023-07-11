@@ -27,6 +27,11 @@
   box-shadow: 0 3px 10px var(--secondary-shadow);
 }
 
+.imgProfile {
+  max-width: 70px;
+  border-radius: 100%;
+}
+
 @media screen and (max-width: 720px) {
   .icon {
     width: 100%;
