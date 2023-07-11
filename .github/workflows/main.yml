@@ -30,5 +30,5 @@ jobs:
       - name: Configurar Google Sheets API
         run: |
           gcloud auth activate-service-account --key-file=service-account-key.json
-          gcloud config set project YOUR_PROJECT_ID
+          gcloud config set project datos-formulario-portfolio
           gcloud auth configure-docker
