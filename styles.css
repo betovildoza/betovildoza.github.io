@@ -28,8 +28,7 @@
 }
 
 .imgProfile {
-  max-width: 70px;
-  border-radius: 100%;
+  max-width: 120px;
 }
 
 @media screen and (max-width: 720px) {
