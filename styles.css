@@ -43,3 +43,40 @@ footer {
   padding: 20px;
   text-align: center;
 }
+
+.bloquePrincipal {
+  padding-top: 2rem;
+}
+
+.skills {
+  max-width: 68.75rem;
+  margin: auto;
+  margin-top: 2.5rem;
+}
+
+.skill-header {
+  margin-bottom: 1rem;
+}
+
+.skills-wrapper img {
+  padding: 1.25rem;
+}
+
+.icon {
+  width: 60%;
+  height: 60%;
+}
+
+.icon-card {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--secondary-shadow);
+}
+
+@media screen and (max-width: 720px) {
+  .icon {
+    width: 100%;
+    height: 100%;
+  }
+}
+
