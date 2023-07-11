@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Formulario</title>
+    <script src="https://apis.google.com/js/api.js"></script>
 </head>
 <body>
     <h1>Formulario de contacto</h1>
@@ -15,6 +16,58 @@
         <input type="submit" value="Enviar">
     </form>
 
-    <script src="index.js"></script>
+    <script>
+        function enviarFormulario(event) {
+            event.preventDefault(); // Evitar que el formulario se envíe automáticamente
+
+            var nombre = document.getElementById('nombre').value;
+            var email = document.getElementById('email').value;
+
+            // Configurar la autenticación
+            gapi.load('client', iniciar);
+
+            function iniciar() {
+                gapi.client.init({
+                    apiKey: "{{API_KEY}}",
+                    clientId: "{{CLIENT_ID}}",
+                    discoveryDocs: ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
+                    scope: 'https://www.googleapis.com/auth/spreadsheets'
+                }).then(function () {
+                    // Autenticar al usuario
+                    return gapi.auth2.getAuthInstance().signIn();
+                }).then(function () {
+                    // Obtener el token de acceso
+                    var accessToken = gapi.auth2.getAuthInstance().currentUser.get().getAuthResponse().access_token;
+                    
+                    // Enviar los datos a la hoja de cálculo
+                    return guardarDatos(nombre, email, accessToken);
+                }).then(function () {
+                    // Mostrar una respuesta al usuario
+                    alert("Gracias por enviar el formulario, " + nombre + ". Te contactaremos pronto.");
+                }).catch(function (error) {
+                    console.error("Error:", error);
+                });
+            }
+
+            function guardarDatos(nombre, email, accessToken) {
+                var spreadsheetId = '16G57FyoQjHGZSoyO3hPh1nDfk8fOOXL3cQ2Fx4FviD8';
+                var range = 'datos!A2:B2';
+                var url = 'https://sheets.googleapis.com/v4/spreadsheets/' + spreadsheetId + '/values/' + range + ':append?valueInputOption=USER_ENTERED';
+                
+                var params = {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': 'Bearer ' + accessToken,
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        values: [[nombre, email]]
+                    })
+                };
+                
+                return fetch(url, params);
+            }
+        }
+    </script>
 </body>
 </html>
