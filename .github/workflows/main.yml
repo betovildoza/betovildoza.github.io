@@ -1,0 +1,23 @@
+name: Despliegue en GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v2
+
+      - name: Configurar variables de entorno
+        run: echo "API_KEY=$API_KEY\nCLIENT_ID=$CLIENT_ID" >> $GITHUB_ENV
+
+      - name: Desplegar en GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@4.1.1
+        with:
+          branch: gh-pages
+          folder: build
