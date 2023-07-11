@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @betovildoza
+- 👋 Hi, I’m @betovildoza and this is https://betovildoza.github.io/
 - 👀 I’m interested in Videogame developing and UXUI Frontend web design
 - 🌱 I’m currently learning Indie Video Game business and production
 - 💞️ I’m looking to collaborate on Web developing 
