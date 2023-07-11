@@ -28,8 +28,8 @@
 
             function iniciar() {
                 gapi.client.init({
-                    apiKey: 'https://betovildoza.github.io/formulario.html',
-                    clientId: '82453650892-f3vjjh9p9c6v9168q43cuo7anm1s6fgq.apps.googleusercontent.com',
+                    apiKey: `${{ secrets.API_KEY }}`,
+                    clientId: `${{ secrets.CLIENT_ID }}`,
                     discoveryDocs: ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
                     scope: 'https://www.googleapis.com/auth/spreadsheets'
                 }).then(function () {
@@ -49,7 +49,7 @@
             function guardarDatos(nombre, email) {
                 var params = {
                     spreadsheetId: '16G57FyoQjHGZSoyO3hPh1nDfk8fOOXL3cQ2Fx4FviD8',
-                    range: 'Hoja 1!A1:B1',
+                    range: 'datos!A2:B2',
                     valueInputOption: 'USER_ENTERED',
                     resource: {
                         values: [[nombre, email]]
