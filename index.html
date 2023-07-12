@@ -156,13 +156,17 @@
         </div>
 
         <div class="col-md-5 offset-md-1 mb-3">
-          <form>
+          <form action="https://formsubmit.co/betovildoza@gmail.com" method="POST">
             <h5>Dejame tu contacto</h5>
             <p>Periodicamente enviaré novedades sobre mis proyectos.</p>
             <div class="d-flex flex-column flex-sm-row w-100 gap-2">
               <label for="newsletter2" class="visually-hidden">Email</label>
-              <input id="newsletter2" type='email' class="form-control" placeholder="tumail@ejemplo.com">
-              <button id="boton2" class="btn btn-primary" type="button">Enviar</button>
+              <input name="email"  id="newsletter2" type='email' class="form-control" placeholder="tumail@ejemplo.com">
+              <label for="newsletter2" class="visually-hidden">Mensaje</label>
+              <input name="mensaje"  id="newsletter2" type='text' class="form-control" placeholder="mensaje...">
+              <input type="hidden" name="_next" value="https://betovildoza.github.io">
+              <input class="btn btn-primary"  type="submit" value="Enviar">
+              
             </div>
           </form>
         </div>
