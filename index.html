@@ -1,197 +1,325 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-theme="light" data-lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-
-  <link rel="stylesheet" href="./styles.css">
-  <!-- FONT Abel -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
-  <title>Beto Vildoza</title>
+  <title>Alberto "Beto" Vildoza</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style></style>
 </head>
-
+</head>
 <body>
 
-  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24">
-      </a>
-      <a class="navbar-brand" href="#">BETO VILDOZA Dev</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Portfolio GitHub</a>
-          </li>
-        </ul>
+  <nav>
+    <a class="nav-brand" href="#">Alberto <span>"Beto"</span> Vildoza</a>
+    <ul class="nav-links">
+      <li><a href="#about"><span class="t t-es">Sobre mí</span><span class="t t-en">About</span></a></li>
+      <li><a href="#disciplines"><span class="t t-es">Disciplinas</span><span class="t t-en">Disciplines</span></a></li>
+      <li><a href="#projects"><span class="t t-es">Proyectos</span><span class="t t-en">Projects</span></a></li>
+      <li><a href="#contact"><span class="t t-es">Contacto</span><span class="t t-en">Contact</span></a></li>
+    </ul>
+    <div class="nav-controls">
+      <div class="lang-toggle">
+        <button class="lang-btn active" id="btn-es" onclick="setLang('es')">ES</button>
+        <button class="lang-btn" id="btn-en" onclick="setLang('en')">EN</button>
       </div>
+      <button class="theme-btn" id="theme-btn" onclick="toggleTheme()">🌙</button>
     </div>
   </nav>
 
-  <section class="bloquePrincipal">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h3 class="text-center">
-            <medium class="text-muted">Beto</medium>Vildoza
-          </h3>
-          <img src="./1688880576473.jpg" alt="imagen de perfil"
-            class="rounded mx-auto d-block imgProfile">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><b>Nombre:</b> Alberto Alejandro Vildoza Müller</li>
-            <li class="list-group-item"><b>Email:</b> betovildoza@gmail.com</li>
-            <li class="list-group-item"><b>Ubicación:</b> Buenos Aires, Argentina </li>
-            <li class="list-group-item"><b>Puesto actual:</b> Desarrollador Web Front-end </li>
-            <li class="list-group-item"><b>Además:</b> Game Designer y UxUi Designer en entrenamiento / Master en Discord / Fotógrafo conceptual</li>
-            <li class="list-group-item disabled">Última actualización: Septiembre 2023</li>
-          </ul>
- 
-          <section class="skills" id="skills">
-            <h3 class="skill-header">Mis habilidades</h2>
-              <div class="skills-wrapper">
-                <div class="first-set animate__animated animate__pulse">
-                  <img src="./csshtmljs.png" alt="" class="icon icon-card" />
-                </div>
-              </div>
-          </section>
-        </div>
+  <div class="page-wrapper">
 
-        <div class="col-md-8">
-          <h3>Acerca de mí</h3>
-          <p>Apassionado por la tecnología, soy ALBERTO VILDOZA, técnico en informática con más de 15 años de experiencia ofreciendo mantenimiento correctivo y preventivo en equipos y sistemas informáticos. Siempre aplico el conocimiento adquirido y lo combino con el aprendizaje autodidacta para refrescar mis habilidades y estar al tanto de las nuevas tecnologías.</p>
-          <h3>Más Sobre mí</h3>
-          <p>Actualmente, mi enfoque está en aprender las tecnologías más utilizadas en el desarrollo web front-end, tomando cursos en plataformas como Udemy, Coursera y el programa de Oracle y Alura-Latam: One Next Education. También dedico tiempo a aprender más sobre Cloud Computing 💻.</p>
-          <p>Me considero autodidacta, siempre en constante aprendizaje y al tanto de las nuevas tecnologías.</p>
-          <p>En mi tiempo libre, disfruto de la lectura de libros 📚 sobre desarrollo personal y profesional, y también disfruto de un buen partido de fútbol o una buena partida en un videojuego 🎮.</p>
-          <p>De mi afición de videojuegos empecé a capacitarme para poder desarrollarlos y actualmente formo parte de un estudio independiente en el cual estamos desarrollando un proyecto llamado <a href="https://estudiopamba.github.io/pombero/" target="_blank">POMBERO: La leyenda de Yará</a>.</p>
-          
-          <div class="accordion accordion-flush" id="accordionFlushExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                  Estudios
-                </button>
-              </h2>
-              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-                data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">
-                  <ul>
-                    <li>Técnico en electrónica egresado/a de la Escuela Técnica Raggio.</li>
-                    <li>Cursos avanzados y certificaciones en desarrollo en UTN, UBA, CODO A CODO, ALURA LATAM, BAM 2.0.</li>
-                    <li>Certificación en lenguajes de programación y desarrollo web por ALURA LATAM en colaboración con ORACLE y CODO A CODO avalado por UTN.</li>
-                    <li>Programa de entrenamiento en DISEÑO UX UI y desarrollo de prototipos en CODO A CODO 4.0 durante 2022.</li>
-                  </ul>
-                </div>
-              </div>
+    <aside>
+      <div class="profile-block">
+        <div class="profile-img-wrap">
+          <img src="./1688880576473.jpg" alt="Alberto Vildoza">
+        </div>
+        <div class="profile-name">Alberto <em>"Beto"</em> Vildoza</div>
+        <div class="profile-title">
+          <span class="t t-es">Especialista IT · Dev Frontend</span>
+          <span class="t t-en">IT Specialist · Frontend Dev</span>
+        </div>
+        <div class="profile-location">📍 Buenos Aires, Argentina</div>
+        <div class="status-badge">
+          <span class="status-dot"></span>
+          <span class="t t-es">Disponible para proyectos</span>
+          <span class="t t-en">Open to opportunities</span>
+        </div>
+      </div>
+      <hr class="sidebar-divider">
+      <div class="data-row">
+        <div class="data-item">
+          <label>Email</label>
+          <a href="mailto:betovildoza@gmail.com">betovildoza@gmail.com</a>
+        </div>
+        <div class="data-item">
+          <label>GitHub</label>
+          <a href="https://github.com/betovildoza" target="_blank">github.com/betovildoza</a>
+        </div>
+        <div class="data-item">
+          <label><span class="t t-es">Experiencia</span><span class="t t-en">Experience</span></label>
+          <span><span class="t t-es">+15 años en IT y sistemas</span><span class="t t-en">15+ years in IT & systems</span></span>
+        </div>
+        <div class="data-item">
+          <label><span class="t t-es">Actualizado</span><span class="t t-en">Updated</span></label>
+          <span>2026</span>
+        </div>
+      </div>
+      <hr class="sidebar-divider">
+      <div class="skills-block">
+        <h4><span class="t t-es">Tecnologías</span><span class="t t-en">Technologies</span></h4>
+        <div class="skill-tags">
+          <span class="skill-tag primary">HTML5</span>
+          <span class="skill-tag primary">CSS3</span>
+          <span class="skill-tag primary">JavaScript</span>
+          <span class="skill-tag">Wordpress</span>
+          <span class="skill-tag">React</span>
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">UX/UI</span>
+          <span class="skill-tag">APIs</span>
+          <span class="skill-tag">Automation</span>
+          <span class="skill-tag">Cloud</span>
+          <span class="skill-tag">Game Dev</span>
+          <span class="skill-tag">Game Prod</span>
+          <span class="skill-tag">Docker</span>
+          <span class="skill-tag">AI</span>
+          <span class="skill-tag">Claude</span>
+        </div>
+      </div>
+    </aside>
+
+    <main>
+
+      <!-- HERO -->
+      <section class="hero" id="about">
+        <div class="hero-eyebrow">IT Specialist · Frontend Developer</div>
+        <h1 class="hero-heading">
+          <span class="t t-es">Pensamiento sistémico<br>aplicado al <span>desarrollo web</span></span>
+          <span class="t t-en">Systems thinking<br>meets <span>web craft</span></span>
+        </h1>
+        <p class="hero-lead tb tb-es">Trabajo en la intersección de sistemas, automatización y tecnologías web, construyendo soluciones prácticas que mejoran la forma en que las personas interactúan con las herramientas digitales. Mi trabajo combina más de una década de experiencia técnica con un enfoque contemporáneo en automatización, web y diseño de sistemas livianos.</p>
+        <p class="hero-lead tb tb-en">I work at the intersection of systems, automation, and web technologies — building practical solutions that improve how people interact with digital tools. My work combines over a decade of hands-on technical experience with a contemporary focus on automation, web development, and lightweight digital system design.</p>
+      </section>
+
+      <!-- STATS -->
+      <section class="section">
+        <div class="card-grid">
+          <div class="card">
+            <div class="card-label"><span class="t t-es">Experiencia</span><span class="t t-en">Experience</span></div>
+            <div class="card-value">15+</div>
+            <div class="card-sub"><span class="t t-es">Años en IT</span><span class="t t-en">Years in IT</span></div>
+          </div>
+          <div class="card">
+            <div class="card-label"><span class="t t-es">Foco actual</span><span class="t t-en">Current focus</span></div>
+            <div class="card-value">Web</div>
+            <div class="card-sub"><span class="t t-es">Dev Frontend</span><span class="t t-en">Frontend dev</span></div>
+          </div>
+          <div class="card">
+            <div class="card-label"><span class="t t-es">Proyecto activo</span><span class="t t-en">Active project</span></div>
+            <div class="card-value">Pombero</div>
+            <div class="card-sub">Indie game · active</div>
+          </div>
+          <div class="card">
+            <div class="card-label"><span class="t t-es">Disciplinas</span><span class="t t-en">Disciplines</span></div>
+            <div class="card-value">5+</div>
+            <div class="card-sub">Dev · IT · UX · Automatiz · Photo</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOCUS AREA -->
+      <section class="section">
+        <div class="section-header">
+          <h2 class="section-title"><span class="t t-es">Área de enfoque</span><span class="t t-en">Focus Area</span></h2>
+        </div>
+        <div class="prose">
+          <p class="tb tb-es">Mi trabajo se concentra en entender cómo funcionan los sistemas, simplificar procesos y construir herramientas que mejoren la interacción entre las personas y la tecnología. Combino una base técnica sólida en infraestructura y soporte con un enfoque práctico en automatización, desarrollo web y diseño de sistemas digitales livianos.</p>
+          <p class="tb tb-en">My work focuses on understanding how systems operate, simplifying processes, and building tools that improve the interaction between people and technology. I combine a solid technical foundation in infrastructure and support with a practical approach to automation, web development, and lightweight digital system design.</p>
+        </div>
+      </section>
+
+      <!-- CORE DISCIPLINES -->
+      <section class="section" id="disciplines">
+        <div class="section-header">
+          <h2 class="section-title"><span class="t t-es">Disciplinas principales</span><span class="t t-en">Core Disciplines</span></h2>
+        </div>
+        <div class="discipline-grid">
+          <div class="discipline-cell"><span class="t t-es">IT Systems y soporte técnico</span><span class="t t-en">IT Systems & Technical Support</span></div>
+          <div class="discipline-cell"><span class="t t-es">Automatización de procesos</span><span class="t t-en">Process Automation</span></div>
+          <div class="discipline-cell"><span class="t t-es">Desarrollo web</span><span class="t t-en">Web Development</span></div>
+          <div class="discipline-cell"><span class="t t-es">Troubleshooting e infraestructura</span><span class="t t-en">Systems Troubleshooting & Infrastructure</span></div>
+          <div class="discipline-cell"><span class="t t-es">Documentación y capacitación técnica</span><span class="t t-en">Documentation & Technical Training</span></div>
+          <div class="discipline-cell"><span class="t t-es">Diseño UX/UI y game design</span><span class="t t-en">UX/UI Design & Game Design</span></div>
+        </div>
+      </section>
+
+      <!-- ACTIVE PROJECTS -->
+      <section class="section" id="projects">
+        <div class="section-header">
+          <h2 class="section-title"><span class="t t-es">Proyectos activos</span><span class="t t-en">Active Projects</span></h2>
+          <span class="section-count">3</span>
+        </div>
+        <div class="project-cards">
+          <div class="project-card">
+            <div class="project-card-header">
+              <span class="project-card-name"><span class="t t-es">Automatización y flujos de trabajo</span><span class="t t-en">Automation & Workflow Systems</span></span>
+              <span class="project-card-tag"><span class="t t-es">En curso</span><span class="t t-en">Ongoing</span></span>
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                  Experiencias
-                </button>
-              </h2>
-              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-                data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body"> Durante varios años trabajé como agente de atención al cliente en una compañía de servicios. Me encantaba ayudar a los clientes y solucionar sus problemas, pero siempre me intrigó el funcionamiento de la plataforma de la empresa. Así que, empecé a investigar por mi cuenta sobre el desarrollo web y la programación. Al poco tiempo, comencé a tomar cursos en línea y a trabajar en algunos proyectos personales. Descubrí que me apasionaba la tecnología y el desarrollo web, así que decidí hacer un cambio de carrera. Ahora, trabajo como desarrollador web en una empresa que me permite utilizar mis habilidades para crear soluciones tecnológicas y mejorar la experiencia del usuario.
-                </div>
-              </div>
+            <p class="project-card-desc tb tb-es">Diseño y experimentación de herramientas de automatización livianas, APIs e integraciones de sistemas orientadas a simplificar mis flujos de trabajo y reducir tareas repetitivas.</p>
+            <p class="project-card-desc tb tb-en">I design and experiment with lightweight automation tools, APIs, and system integrations aimed at simplifying workflows and reducing repetitive tasks.</p>
+          </div>
+          <div class="project-card">
+            <div class="project-card-header">
+              <span class="project-card-name">POMBERO: La leyenda de Yará</span>
+              <span class="project-card-tag">Indie game · Active</span>
+            </div>
+            <p class="project-card-desc tb tb-es">Trabajo colaborativo en desarrollo de videojuego independiente explorando diseño narrativo, construcción de mundos digitales y narrativa interactiva en el entorno de un estudio indie.</p>
+            <p class="project-card-desc tb tb-en">I collaborate on indie game development exploring narrative design, digital world-building, and interactive storytelling within an independent studio environment.</p>
+            <a class="project-card-link" href="https://estudiopamba.github.io/pombero/" target="_blank">
+              <span class="t t-es">Ver proyecto</span><span class="t t-en">View project</span> →
+            </a>
+          </div>
+          <div class="project-placeholder">
+            <div class="project-placeholder-inner">
+              <span class="placeholder-label"><span class="t t-es">Próximo proyecto — en preparación</span><span class="t t-en">Next project — in preparation</span></span>
+              <span class="placeholder-badge"><span class="t t-es">Próximamente</span><span class="t t-en">Coming soon</span></span>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <div class="container">
-    <footer class="py-5">
-      <div class="row">
-        <div class="col-6 col-md-2 mb-3">
-          <h5>Proyectos</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Encryptador</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Conversor de moneda</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Juego Ahorcado</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Mini-Wiki</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Venta de videojuegos </a></li>
-          </ul>
+      <!-- EDUCATION & EXPERIENCE -->
+      <section class="section">
+        <div class="section-header">
+          <h2 class="section-title"><span class="t t-es">Formación y experiencia</span><span class="t t-en">Education & Experience</span></h2>
         </div>
-
-        <div class="col-6 col-md-2 mb-3">
-          <h5>Colaboradores</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Fotografía</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Escritura</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Locaciones</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Ventas</a></li>
-          </ul>
-        </div>
-
-        <div class="col-6 col-md-2 mb-3">
-          <h5>Redes Sociales</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">LinkedIn</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">GitHub</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Twitter</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Instagram</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Discord server</a></li>
-          </ul>
-        </div>
-
-        <div class="col-md-5 offset-md-1 mb-3">
-          <form action="https://formsubmit.co/betovildoza@gmail.com" method="POST" data-netlify="true">
-            <h5>Dejame tu contacto</h5>
-            <p>Periodicamente enviaré novedades sobre mis proyectos.</p>
-            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-              <label for="newsletter2" class="visually-hidden">Email</label>
-              <input name="email"  id="newsletter2" type='email' class="form-control" placeholder="tumail@ejemplo.com" required>
-              <label for="newsletter2" class="visually-hidden">Mensaje</label>
-              <input name="mensaje"  id="newsletter2" type='text' class="form-control" placeholder="mensaje..." required>
-              <input type="hidden" name="_next" value="https://betovildoza.github.io">
-              <input type="hidden" name="_template" value="table">
-              <div data-netlify-recaptcha="true"></div>
-              <input class="btn btn-primary"  type="submit" value="Enviar">
-              
+        <div class="accordion-item">
+          <button class="accordion-btn" onclick="toggleAccordion(this)">
+            <span class="accordion-btn-label"><span class="t t-es">Formación académica y certificaciones</span><span class="t t-en">Academic background & certifications</span></span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-body">
+            <div class="accordion-body-inner">
+              <ul>
+                <li class="tli tli-es">Técnico en electrónica — Escuela Técnica Raggio</li>
+                <li class="tli tli-es">Más de 15 años de experiencia con sistemas informáticos y soporte al usuario</li>
+                <li class="tli tli-es">Certificaciones en desarrollo web — UTN, UBA, Codo a Codo, Alura Latam / Oracle Next Education</li>
+                <li class="tli tli-es">Certificación en lenguajes de programación y desarrollo web — Oracle + Alura Latam</li>
+                <li class="tli tli-es">Entrenamiento en Diseño UX/UI y prototipos — Codo a Codo 4.0</li>
+                <li class="tli tli-es">Aprendizaje autodidacta continuo en automatización, tecnologías web y diseño de sistemas</li>
+                <li class="tli tli-en">Electronics technician — Escuela Técnica Raggio</li>
+                <li class="tli tli-en">15+ years of experience with computer systems, technical troubleshooting, and user support</li>
+                <li class="tli tli-en">Web development certifications — UTN, UBA, Codo a Codo, Alura Latam / Oracle Next Education</li>
+                <li class="tli tli-en">Certification in programming languages and web development — Oracle + Alura Latam</li>
+                <li class="tli tli-en">UX/UI design & prototyping — Codo a Codo 4.0</li>
+                <li class="tli tli-en">Ongoing self-directed learning in automation tools, web technologies, and system design</li>
+              </ul>
             </div>
-          </form>
+          </div>
         </div>
-      </div>
+        <div class="accordion-item">
+          <button class="accordion-btn" onclick="toggleAccordion(this)">
+            <span class="accordion-btn-label"><span class="t t-es">Trayectoria profesional</span><span class="t t-en">Professional background</span></span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-body">
+            <div class="accordion-body-inner">
+              <p class="tb tb-es">Comencé en atención técnica al cliente, donde la curiosidad por el funcionamiento de los sistemas impulsó mi transición autodidacta hacia el desarrollo web. Actualmente trabajo como desarrollador frontend, combinando ese instinto resolutivo con herramientas modernas para crear experiencias digitales centradas en el usuario. Paralelamente, continúo capacitándome en cloud computing, producción de videojuegos indie y automatización de flujos de trabajo.</p>
+              <p class="tb tb-en">I started in customer-facing technical support, where curiosity about the underlying systems sparked my self-directed transition into web development. Now I work as a frontend developer — applying that same problem-solving instinct to build user-centered digital experiences. I'm continuing education in cloud computing, indie game production, and workflow automation.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-        <p>&copy; 2023 Alberto Vildoza. Todos los derechos reservados.</p>
-      </div>
-    </footer>
+      <!-- OPERATING PRINCIPLES -->
+      <section class="section">
+        <div class="section-header">
+          <h2 class="section-title"><span class="t t-es">Principios de trabajo</span><span class="t t-en">Operating Principles</span></h2>
+        </div>
+        <div class="principles">
+          <div class="principle-row">
+            <span class="principle-label"><span class="t t-es">Claridad sobre complejidad</span><span class="t t-en">Clarity over complexity</span></span>
+            <span class="principle-desc"><span class="t t-es">Las soluciones simples y comprensibles suelen ser las más confiables.</span><span class="t t-en">Simple, understandable solutions are usually the most reliable.</span></span>
+          </div>
+          <div class="principle-row">
+            <span class="principle-label"><span class="t t-es">Pensamiento sistémico</span><span class="t t-en">Systems thinking</span></span>
+            <span class="principle-desc"><span class="t t-es">Los problemas se resuelven mejor cuando se entiende el sistema completo.</span><span class="t t-en">Problems are easier to solve when the whole system is understood.</span></span>
+          </div>
+          <div class="principle-row">
+            <span class="principle-label"><span class="t t-es">Impacto práctico</span><span class="t t-en">Practical impact</span></span>
+            <span class="principle-desc"><span class="t t-es">La tecnología debe resolver problemas reales, no solo demostrar capacidad técnica.</span><span class="t t-en">Technology should solve real problems, not just demonstrate capability.</span></span>
+          </div>
+          <div class="principle-row">
+            <span class="principle-label"><span class="t t-es">Aprendizaje continuo</span><span class="t t-en">Continuous learning</span></span>
+            <span class="principle-desc"><span class="t t-es">Las herramientas cambian, pero la curiosidad y la adaptabilidad son esenciales.</span><span class="t t-en">Tools change, but curiosity and adaptability remain essential.</span></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- PHILOSOPHY -->
+      <section class="section">
+        <div class="section-header">
+          <h2 class="section-title"><span class="t t-es">Filosofía tecnológica</span><span class="t t-en">Technology Philosophy</span></h2>
+        </div>
+        <div class="philosophy-block">
+          <p class="tb tb-es">Creo que la tecnología debe empoderar a las personas y simplificar los procesos, no generar complejidad innecesaria. Los mejores sistemas son los que resultan útiles, comprensibles y sostenibles a lo largo del tiempo, permitiendo que individuos y equipos trabajen con mayor eficacia sin verse abrumados por las herramientas de las que dependen.</p>
+          <p class="tb tb-en">I believe technology should empower people and simplify processes, not create unnecessary complexity. The best systems are those that are useful, understandable, and sustainable over time, allowing individuals and teams to work more effectively without being overwhelmed by the tools they depend on.</p>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section" id="contact">
+        <div class="section-header">
+          <h2 class="section-title"><span class="t t-es">Contacto</span><span class="t t-en">Contact</span></h2>
+        </div>
+        <div class="contact-simple">
+          <div class="contact-email-icon">✉️</div>
+          <div>
+            <div class="contact-email-label"><span class="t t-es">Correo electrónico</span><span class="t t-en">Email</span></div>
+            <a class="contact-email-addr" href="mailto:betovildoza@gmail.com">betovildoza@gmail.com</a>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <p>© 2026 Alberto Vildoza.</p>
+        <ul class="footer-links">
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Discord</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </footer>
+
+    </main>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"></script>
-  <script src="./formulario.js"></script>
+
+  <script>
+    const html = document.documentElement;
+
+    function setLang(lang) {
+      html.setAttribute('data-lang', lang);
+      document.getElementById('btn-es').classList.toggle('active', lang === 'es');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    }
+
+    function toggleTheme() {
+      const isDark = html.getAttribute('data-theme') === 'dark';
+      html.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      document.getElementById('theme-btn').textContent = isDark ? '🌙' : '☀️';
+    }
+
+    function toggleAccordion(btn) {
+      const body = btn.nextElementSibling;
+      const icon = btn.querySelector('.accordion-icon');
+      const isOpen = body.classList.contains('open');
+      document.querySelectorAll('.accordion-body').forEach(b => b.classList.remove('open'));
+      document.querySelectorAll('.accordion-icon').forEach(i => i.textContent = '+');
+      if (!isOpen) { body.classList.add('open'); icon.textContent = '−'; }
+    }
+  </script>
+
 </body>
 </html>
-
