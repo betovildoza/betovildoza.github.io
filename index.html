@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="light" data-lang="es">
+<html lang="es" data-theme="dark" data-lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,8 @@
         <button class="lang-btn active" id="btn-es" onclick="setLang('es')">ES</button>
         <button class="lang-btn" id="btn-en" onclick="setLang('en')">EN</button>
       </div>
-      <button class="theme-btn" id="theme-btn" onclick="toggleTheme()">🌙</button>
+      <button class="theme-btn" id="theme-btn" onclick="toggleTheme()">☀️</button>
+      <p class="nav-p">Light/Dark</p>
     </div>
   </nav>
 
@@ -37,8 +38,8 @@
         </div>
         <div class="profile-name">Alberto <em>"Beto"</em> Vildoza</div>
         <div class="profile-title">
-          <span class="t t-es">Especialista IT · Dev Frontend</span>
-          <span class="t t-en">IT Specialist · Frontend Dev</span>
+          <span class="t t-es">Especialista IT · Coach Ontológico</span>
+          <span class="t t-en">IT Specialist · Ontological Coach</span>
         </div>
         <div class="profile-location">📍 Buenos Aires, Argentina</div>
         <div class="status-badge">
@@ -67,19 +68,12 @@
       <div class="skills-block">
         <h4><span class="t t-es">Tecnologías</span><span class="t t-en">Technologies</span></h4>
         <div class="skill-tags">
-          <span class="skill-tag primary">HTML5</span>
-          <span class="skill-tag primary">CSS3</span>
-          <span class="skill-tag primary">JavaScript</span>
-          <span class="skill-tag">Wordpress</span>
-          <span class="skill-tag">React</span>
-          <span class="skill-tag">Git</span>
-          <span class="skill-tag">UX/UI</span>
-          <span class="skill-tag">APIs</span>
-          <span class="skill-tag">Cloud</span>
-          <span class="skill-tag">Game Prod</span>
+          <span class="skill-tag primary">React / Next.js</span>
+          <span class="skill-tag primary">Supabase</span>
+          <span class="skill-tag">WordPress</span>
           <span class="skill-tag">Docker</span>
-          <span class="skill-tag">AI</span>
-          <span class="skill-tag">Claude</span>
+          <span class="skill-tag">Node.js</span>
+          <span class="skill-tag">Automatización</span>
         </div>
       </div>
     </aside>
@@ -87,18 +81,22 @@
     <main>
 
       <!-- HERO -->
-      <section class="hero" id="about">
-        <div class="hero-eyebrow">IT Specialist · Frontend Developer</div>
+      <section class="hero" >
+        <div class="hero-eyebrow">Sistemas · Procesos · Personas</div>
         <h1 class="hero-heading">
-          <span class="t t-es">Pensamiento sistémico<br>aplicado al <span>desarrollo web</span></span>
-          <span class="t t-en">Systems thinking<br>meets <span>web craft</span></span>
+          <span class="t t-es">Pensamiento sistémico<br>aplicado al <span>bienestar digital</span></span>
+          <span class="t t-en">Systems thinking<br>for <span>digital wellbeing</span></span>
         </h1>
-        <p class="hero-lead tb tb-es">Trabajo en la intersección de sistemas, automatización y tecnologías web, construyendo soluciones prácticas que mejoran la forma en que las personas interactúan con las herramientas digitales. Mi trabajo combina más de una década de experiencia técnica con un enfoque contemporáneo en automatización, web y diseño de sistemas livianos.</p>
-        <p class="hero-lead tb tb-en">I work at the intersection of systems, automation, and web technologies — building practical solutions that improve how people interact with digital tools. My work combines over a decade of hands-on technical experience with a contemporary focus on automation, web development, and lightweight digital system design.</p>
+        <p class="hero-lead tb tb-es">
+          Con más de 15 años en el sector IT y formación como <strong>Coach Ontológico y Master en PNL</strong>, diseño herramientas que no solo funcionan, sino que tienen sentido para quienes las usan. Mi enfoque une la robustez técnica con la escucha activa para simplificar flujos de trabajo complejos.
+        </p>
+        <p class="hero-lead tb tb-en">
+          With 15+ years in IT and a background as an <strong>Ontological Coach & NLP Master</strong>, I design tools that don't just work—they make sense to the people using them. My approach bridges technical robustness with active listening to simplify complex workflows.
+        </p>
       </section>
 
       <!-- STATS -->
-      <section class="section">
+      <section class="section" id="about">
         <div class="card-grid">
           <div class="card">
             <div class="card-label"><span class="t t-es">Experiencia</span><span class="t t-en">Experience</span></div>
@@ -107,18 +105,18 @@
           </div>
           <div class="card">
             <div class="card-label"><span class="t t-es">Foco actual</span><span class="t t-en">Current focus</span></div>
-            <div class="card-value">Web</div>
-            <div class="card-sub"><span class="t t-es">Dev Frontend</span><span class="t t-en">Frontend dev</span></div>
+            <div class="card-value">IT Architecture</div>
+            <div class="card-sub"><span class="t t-es">Sistemas & IA</span><span class="t t-en">Systems & AI</span></div>
           </div>
           <div class="card">
             <div class="card-label"><span class="t t-es">Proyecto activo</span><span class="t t-en">Active project</span></div>
-            <div class="card-value">Pombero</div>
-            <div class="card-sub">Indie game · active</div>
+            <div class="card-value">Clases.ETCA</div>
+            <div class="card-sub">Supabase · PWA</div>
           </div>
           <div class="card">
             <div class="card-label"><span class="t t-es">Disciplinas</span><span class="t t-en">Disciplines</span></div>
             <div class="card-value">5+</div>
-            <div class="card-sub">Dev · IT · UX · Automation · Photo</div>
+            <div class="card-sub">Dev · IT · UX · Automation · PNL</div>
           </div>
         </div>
       </section>
@@ -153,28 +151,43 @@
       <section class="section" id="projects">
         <div class="section-header">
           <h2 class="section-title"><span class="t t-es">Proyectos activos</span><span class="t t-en">Active Projects</span></h2>
-          <span class="section-count">3</span>
+          <span class="section-count">7</span>
         </div>
         <div class="project-cards">
+          <div class="project-cards">
           <div class="project-card">
             <div class="project-card-header">
-              <span class="project-card-name"><span class="t t-es">Automatización y flujos de trabajo</span><span class="t t-en">Automation & Workflow Systems</span></span>
-              <span class="project-card-tag"><span class="t t-es">En curso</span><span class="t t-en">Ongoing</span></span>
+              <span class="project-card-name">AULA ETCA: Gestión del Conocimiento</span>
+              <span class="project-card-tag">LMS & Workflow</span>
             </div>
-            <p class="project-card-desc tb tb-es">Diseño y experimentación de herramientas de automatización livianas, APIs e integraciones de sistemas orientadas a simplificar mis flujos de trabajo y reducir tareas repetitivas.</p>
-            <p class="project-card-desc tb tb-en">I design and experiment with lightweight automation tools, APIs, and system integrations aimed at simplifying workflows and reducing repetitive tasks.</p>
-          </div>
-          <div class="project-card">
-            <div class="project-card-header">
-              <span class="project-card-name">POMBERO: La leyenda de Yará</span>
-              <span class="project-card-tag">Indie game · Active</span>
-            </div>
-            <p class="project-card-desc tb tb-es">Trabajo colaborativo en desarrollo de videojuego independiente explorando diseño narrativo, construcción de mundos digitales y narrativa interactiva en el entorno de un estudio indie.</p>
-            <p class="project-card-desc tb tb-en">I collaborate on indie game development exploring narrative design, digital world-building, and interactive storytelling within an independent studio environment.</p>
-            <a class="project-card-link" href="https://estudiopamba.github.io/pombero/" target="_blank">
-              <span class="t t-es">Ver proyecto</span><span class="t t-en">View project</span> →
+            <p class="project-card-desc tb tb-es">
+              Desarrollo de una plataforma para centralizar la teoría de una disciplina física (tiro con arco). Resolví la dispersión de materiales mediante una arquitectura de información clara para alumnos y docentes.
+            </p>
+            <p class="project-card-desc tb tb-en">
+              Developed a platform to centralize theoretical knowledge for a physical discipline (archery). I solved material fragmentation through a clear information architecture for students and instructors.
+            </p>
+            <a class="project-card-link" href="https://aula.etca.com.ar" target="_blank">
+              <span class="t t-es">Ver plataforma</span><span class="t t-en">View platform</span> →
             </a>
           </div>
+
+          <div class="project-card">
+            <div class="project-card-header">
+              <span class="project-card-name">POMBERO: La leyenda de Yara</span>
+              <span class="project-card-tag">Game Design/Production & UX</span>
+            </div>
+            <p class="project-card-desc tb tb-es">
+              Proyecto presentado en EVA 2023. Exploración de narrativa interactiva y diseño de sistemas complejos en un entorno de desarrollo independiente (Estudio Pamba).
+            </p>
+            <p class="project-card-desc tb tb-en">
+              Project showcased at EVA 2023. An exploration of interactive storytelling and complex system design within an indie development environment (Estudio Pamba).
+            </p>
+            <a class="project-card-link" href="https://estudiopamba.github.io/pombero/" target="_blank">
+              <span class="t t-es">Explorar proyecto</span><span class="t t-en">Explore project</span> →
+            </a>
+          </div>
+        </div>
+          
           <div class="project-placeholder">
             <div class="project-placeholder-inner">
               <span class="placeholder-label"><span class="t t-es">Próximo proyecto — en preparación</span><span class="t t-en">Next project — in preparation</span></span>
@@ -257,38 +270,38 @@
         <div class="section-header">
           <h2 class="section-title"><span class="t t-es">Filosofía tecnológica</span><span class="t t-en">Technology Philosophy</span></h2>
         </div>
-        <div class="philosophy-block">
+        <div class="">
           <p class="tb tb-es">Creo que la tecnología debe empoderar a las personas y simplificar los procesos, no generar complejidad innecesaria. Los mejores sistemas son los que resultan útiles, comprensibles y sostenibles a lo largo del tiempo, permitiendo que individuos y equipos trabajen con mayor eficacia sin verse abrumados por las herramientas de las que dependen.</p>
           <p class="tb tb-en">I believe technology should empower people and simplify processes, not create unnecessary complexity. The best systems are those that are useful, understandable, and sustainable over time, allowing individuals and teams to work more effectively without being overwhelmed by the tools they depend on.</p>
         </div>
       </section>
 
       <!-- CONTACT -->
-      <section class="section" id="contact">
-        <div class="section-header">
-          <h2 class="section-title"><span class="t t-es">Contacto</span><span class="t t-en">Contact</span></h2>
-        </div>
-        <div class="contact-simple">
-          <div class="contact-email-icon">✉️</div>
-          <div>
-            <div class="contact-email-label"><span class="t t-es">Correo electrónico</span><span class="t t-en">Email</span></div>
-            <a class="contact-email-addr" href="mailto:betovildoza@gmail.com">betovildoza@gmail.com</a>
-          </div>
+            <section class="section" id="contact">
+        <div class="philosophy-block">
+          <h3 style="font-family: 'Playfair Display', serif; margin-bottom: 0.5rem;">
+            <span class="t t-es">¿Charlamos sobre tu próximo sistema?</span>
+            <span class="t t-en">Shall we discuss your next system?</span>
+          </h3>
+          <p class="tb tb-es">Busco conectar con proyectos que valoren la simplicidad, la automatización y el diseño centrado en el ser humano.</p>
+          <p class="tb tb-en">I'm looking to connect with projects that value simplicity, automation, and human-centered design.</p>
+          <br>
+          <a href="mailto:betovildoza@gmail.com" class="skill-tag primary" style="text-decoration: none; padding: 10px 20px; display: inline-block;">
+            <span class="t t-es">Enviar email</span><span class="t t-en">Send email</span>
+          </a>
         </div>
       </section>
 
+      
       <footer>
-        
-        <div><p>© 2026 Alberto Vildoza.</p></div>
-        <div>
+        <p>© 2026 Alberto Vildoza. Buenos Aires, AR.</p>
         <ul class="footer-links">
+          <li><a href="https://github.com/betovildoza" target="_blank">GitHub</a></li>
           <li><a href="#">LinkedIn</a></li>
-          <li><a href="#">GitHub</a></li>
           <li><a href="#">Twitter</a></li>
           <li><a href="#">Discord</a></li>
           <li><a href="#">Instagram</a></li>
         </ul>
-        </div>
       </footer>
 
     </main>

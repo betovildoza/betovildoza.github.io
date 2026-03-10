@@ -78,7 +78,7 @@ nav {
   padding: 0.22rem 0.6rem;
   font-family: 'DM Sans', sans-serif; font-size: 0.7rem; font-weight: 500;
   letter-spacing: 0.08em; text-transform: uppercase;
-  color: var(--ink-faint); cursor: pointer; transition: background 0.15s, color 0.15s;
+  color: #a0a09e; cursor: pointer; transition: background 0.15s, color 0.15s;
 }
 .lang-btn.active { background: var(--accent); color: #fff; }
 .theme-btn {
@@ -88,6 +88,9 @@ nav {
   font-size: 0.85rem; transition: border-color 0.2s;
 }
 .theme-btn:hover { border-color: var(--accent); }
+.nav-p {
+  color: #a0a09e
+}
 
 /* LAYOUT */
 .page-wrapper { display: flex; min-height: 100vh; padding-top: var(--nav-h); }
@@ -233,7 +236,7 @@ html[data-lang="es"] .tli-es { display: list-item; }
 html[data-lang="en"] .tli-en { display: list-item; }
 
 /* RESPONSIVE */
-@media (max-width: 960px) { .card-grid { grid-template-columns: 1fr 1fr; } main { padding: 2rem 2rem; } }
+@media (max-width: 960px) { .card-grid { grid-template-columns: 1fr 1fr; } main { padding: 2rem 2rem; } .nav-p { display: none; }}
 @media (max-width: 820px) {
   .page-wrapper { flex-direction: column; }
   aside { width: 100%; position: static; height: auto; border-right: none; border-bottom: 1px solid var(--rule); }
@@ -241,6 +244,7 @@ html[data-lang="en"] .tli-en { display: list-item; }
   .hero-heading { font-size: 2.2rem; }
   .principle-row { flex-direction: column; gap: 0.3rem; }
   .discipline-grid { grid-template-columns: 1fr; }
+  
 }
 @media (max-width: 560px) {
   .nav-links { display: none; }
